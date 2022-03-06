@@ -1,0 +1,95 @@
+9<!DOCTYPE HTML>
+<html>
+<head>
+	<title>VisitUs</title>
+	<meta name="description" content="html page with form"/>
+	<meta name="keywords" content="Visitus,form,contact"/>
+	<meta name="author" content="Surin Poudel"/>
+	<link rel="stylesheet" href="STYLE/style1.CSS"> <!--tag to use external css-->
+	<!--internal css for body of this page only-->
+	<style >
+		body{background-color: #494949;}
+	</style>
+	<!--use of external js to display alert message-->
+	<script type="text/javascript" src="./java/validation.js"></script>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="main"> <!--.main class to form division in header-->
+				<div class="logo">  <!--.logo class for logo image in header-->
+					<img src="image/logo.png">
+				</div>
+				<table width="100%"> <!--width of table for navigation bar-->
+					<tr>
+						<th>
+							<ul class="nav">
+								<li><a href="HOme.HTM">HOme</a></li>
+							</ul> <!--nav class for navigation bar-->
+						</th>
+					</tr>
+				</table>
+			</div>
+		</nav>
+	</header>
+	<!--defining visit in division inside body-->
+	<div class="visit">
+	    <!--inline css for content inside division-->
+        <div style="text-align: center;color: grey;">
+    	    <h1>VisitUs</h1>
+    	    <p>Happy to have you here also any Feedbacks are Welcome!!!</p>
+        </div><br><br>
+        <!--table row or main row or flex-->
+        <div class ="row2">
+	    <!--defining left column-->
+	        <div class ="leftcolumn">
+		        <img src="image/image3.jpg" width="80%" height="50%" style="padding-top: 30px;">
+	        </div>
+	        <!--defining right column-->
+		    <div class="form rightcolumn">
+		    	<!--calling validation() function from external java script and defining form class-->
+		        <form onsubmit="validation()" name="form">
+			        <p> First name: <input type="text" name="firstname" placeholder="Enter your firstname"> </p></br>
+    		        <p>Last name: <input type="text" name="lastname" placeholder="Enter your lastname"> </p></br>
+    		        <p>Gender: <input type="radio" name="gender" value="male" checked> Male <input type="radio" name="gender" value="female"checked> Female <input type="radio" name="gender" value="other"checked> Other </p></br>
+    		        <p>Age: <input type="number" name="age" size="0.5" placeholder="AGE"> </p></br>
+    		        <p>Country: <select><option>Nepal</option><option>India</option><option>USA</option><option>UK</option></p></select></p> </br>
+    		        <p>Email: <input type="Email" name="email" placeholder="Enter your Email or Phone Number" size="48"></p> </br>
+                    <p>Password: <input type="Password" name="pass" placeholder="Enter your password" size="20"></p> </br>
+                    <p>Phone Number: <input type="Phone" name="phone" placeholder="Enter your phone number" size="34"></p> </br>
+    		        <p>Message: <br> <textarea name="message" rows="10" cols="30" placeholder="Enter message"></textarea></p> </br>
+    		        <p><input type="submit" value="Submit"></p>
+    	        </form>
+            </div>
+        </div>
+    </div>
+</body/>
+<footer>
+	<!--defining inner-footer class-->
+	<div class ="inner-footer"> 
+		<h4>FOllOW ME AT:</h4> 
+		<div class="social"> <!--defining social class-->
+			<li><a href="https://www.facebook.com"><img border="0" alt="facebook" src="image/fb.png" width="40" height="40"></a></li>
+			<li><a href="https://www.linkedin.com"><img border="0" alt="linkedin" src="image/Ld.png" width="40" height="40"></a></li>
+			<li><a href="https://www.twitter.com"><img border="0" alt="gmail" src="image/tw.png" width="40" height="40"></a></li>
+		</div>
+		<!--defining navf class -->
+		<div class="navf"> 
+	        <ul>
+				<li class="h"><a href="HOme.HTM">HOme</a></li> <!--defining h class-->
+				<li class="v"><a href="CV.HTM">CV</a></li>     <!--defining v class-->
+				<li class="b"><a href="Blogs.HTM">BLOGs</a></li>  <!--defining b class-->
+				<li class="r"><a href="Research.HTM">ReSearch</a></li>   <!--defining r class-->
+				<li><a href="VisitUs.HTM">VisitUS</a></li>
+		    </ul>
+	
+		</div>
+	</div>
+	<div class="outer-footer"> <!--defining outer footer-->
+		<h2>Surin Poudel</h2>
+        <p>Email: surinpoudel@gmail.com <br/>
+             Copyright &copy; mOpU 2021 All right reserved</p>
+	</div>
+</footer>
+
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HOme</title>
+	<meta name="description" content="this is my first website"/>
+	<meta name="keywords" content="mopo,prakriti"/>
+	<meta name="author" content="Surin Poudel"/>
+	<link rel="stylesheet" href="STYLE/style1.css"> <!--tag to use external css-->
+	<!--internal css for body of this page only-->
+	<style>
+		body{background-image: url("image/image1.jpg");
+	          background size: 100%
+              background repeat:no-repeat
+               margin: 0;
+               padding:0;
+
+          }
+      </style>
+</head>
+<body>
+	<header>
+		<nav>
+			<div class="main"> <!--.main class to form division in header-->
+				<div class="logo">  <!--.logo class for logo image in header-->
+					<img src="image/logo.png">
+				</div>
+				<table width="100%"> <!--width of table for navigation bar-->
+					<tr>
+						<th>
+							<ul class="nav">
+								<li class="c"><a href="HOme.HTM">HOme</a></li>
+								<li><a href="CV.HTM">CV</a></li>
+								<li><a href="Blogs.HTM">BLOGs</a></li>
+								<li><a href="Research.HTM">ReSearch</a></li>
+								<li><a href="VisitUs.HTM">VisitUS</a></li>
+							</ul> <!--nav class for navigation bar-->
+						</th>
+					</tr>
+				</table>
+			</div>
+		</nav>
+	</header>
+	<!--defining content-->
+	<div class="content">
+		<section>
+	 	<!--time id to use internal java script to use function dispaly to show time and date and inline css style for date and time as it was only used in this page for this paragraph only -->
+	 	 <p id="time" style="text-align: right;color: black;font-size: 18px;"></p>
+	 	 </br></br>
+	 	<!--inline css style for heading class to give title in body only for this page-->
+	     <h1 style="color: purple;">Prakriti Poudel</h1> 
+	     <!--inline css style for paragraph tag in this page only-->
+	     <p style="color: #e1e1e1;">This website contains my personal blogs<br>about technology along with some research material. <br>If you are interested in me you can check my CV. <br> Please kindly leave feedback on VistUs</p>
+     </section>
+ </div>
+</body>
+
+<footer>
+	<!--defining inner-footer class-->
+	<div class ="inner-footer"> 
+		<h4>FOllOW ME AT:</h4> 
+		<div class="social"> <!--defining social class-->
+			<li><a href="https://www.facebook.com"><img border="0" alt="facebook" src="image/fb.png" width="40" height="40"></a></li>
+			<li><a href="https://www.linkedin.com"><img border="0" alt="linkedin" src="image/Ld.png" width="40" height="40"></a></li>
+			<li><a href="https://www.twitter.com"><img border="0" alt="gmail" src="image/tw.png" width="40" height="40"></a></li>
+		</div>
+		<!--defining navf class -->
+		<div class="navf"> 
+	        <ul>
+				<li class="h"><a href="HOme.HTM">HOme</a></li> <!--defining h class-->
+				<li class="v"><a href="CV.HTM">CV</a></li>     <!--defining v class-->
+				<li class="b"><a href="Blogs.HTM">BLOGs</a></li>  <!--defining b class-->
+				<li class="r"><a href="Research.HTM">ReSearch</a></li>   <!--defining r class-->
+				<li><a href="VisitUs.HTM">VisitUS</a></li>
+		    </ul>
+	
+		</div>
+	</div>
+	<div class="outer-footer"> <!--defining outer footer-->
+		<h2>Surin Poudel</h2>
+        <p>Email: surinpoudel@gmail.com <br/>
+             Copyright &copy; mOpU 2021 All right reserved</p>
+	</div>
+</footer>
+
+<!--internal java script to display date and time-->
+<script>
+	function display() {
+		document.getElementById('time').innerHTML= Date();
+		setTimeout(display,1000);
+	}
+	display();
+</script>
+</html>
